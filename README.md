@@ -11,6 +11,29 @@ A simple, beautiful weather application that displays current weather informatio
 - API key storage in browser local storage
 - Weather icons from OpenWeatherMap
 
+## Running the App
+
+### Option 1: Local File (Quickest)
+Simply open `index.html` in your web browser by double-clicking it or using:
+```bash
+xdg-open index.html  # Linux
+open index.html      # Mac
+start index.html     # Windows
+```
+
+### Option 2: Local Web Server (Recommended)
+Run the included Python server:
+```bash
+python3 server.py
+```
+Then open http://localhost:8000/ in your browser.
+
+### Option 3: GitHub Pages (Online Hosting)
+1. Push this repository to GitHub
+2. Go to **Settings** > **Pages**
+3. Select your main branch and **/ (root)** folder
+4. Your site will be live at `https://your-username.github.io/repo-name/`
+
 ## How to Use
 
 1. **Get an API Key**
@@ -19,7 +42,7 @@ A simple, beautiful weather application that displays current weather informatio
    - Generate an API key (it may take a few minutes to activate)
 
 2. **Set Up the App**
-   - Open `index.html` in your web browser
+   - Open the app using one of the methods above
    - Enter your OpenWeatherMap API key in the input field
    - Click "Save API Key"
 
