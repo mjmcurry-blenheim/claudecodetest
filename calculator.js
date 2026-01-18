@@ -12,10 +12,10 @@ class Calculator {
     return result;
   }
 
-  // Bug: Off-by-one error in array access
+  // Fixed: Corrected loop condition to avoid off-by-one error
   getAverage(numbers) {
     let sum = 0;
-    for (let i = 0; i <= numbers.length; i++) {
+    for (let i = 0; i < numbers.length; i++) {
       sum += numbers[i];
     }
     return sum / numbers.length;
