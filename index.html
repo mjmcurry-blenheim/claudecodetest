@@ -11,6 +11,7 @@
         <header>
             <h1>Weather App</h1>
             <p>Get current weather information for any city</p>
+            <button id="settingsBtn" class="settings-btn" title="Manage API Key">⚙️</button>
         </header>
 
         <div class="search-box">
@@ -19,13 +20,23 @@
         </div>
 
         <div id="apiKeySection" class="api-key-section">
-            <p>Please enter your OpenWeatherMap API key:</p>
-            <input type="text" id="apiKeyInput" placeholder="Enter API key..." />
-            <button id="saveApiKeyBtn">Save API Key</button>
-            <p class="api-help">
-                Don't have an API key?
-                <a href="https://openweathermap.org/api" target="_blank">Get one free here</a>
-            </p>
+            <div class="api-key-header">
+                <h3>API Key Settings</h3>
+                <button id="closeApiKeyBtn" class="close-btn">×</button>
+            </div>
+            <div id="currentKeyDisplay" class="current-key hidden">
+                <p>Current API Key: <span id="currentKeyText"></span></p>
+                <button id="changeKeyBtn" class="change-key-btn">Change Key</button>
+            </div>
+            <div id="apiKeyInputSection">
+                <p>Please enter your OpenWeatherMap API key:</p>
+                <input type="text" id="apiKeyInput" placeholder="Enter API key..." />
+                <button id="saveApiKeyBtn">Save API Key</button>
+                <p class="api-help">
+                    Don't have an API key?
+                    <a href="https://openweathermap.org/api" target="_blank">Get one free here</a>
+                </p>
+            </div>
         </div>
 
         <div id="loading" class="loading hidden">

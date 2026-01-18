@@ -26,6 +26,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
+    position: relative;
 }
 
 header h1 {
@@ -37,6 +38,28 @@ header h1 {
 header p {
     color: #666;
     font-size: 1rem;
+}
+
+.settings-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-btn:hover {
+    background: #e9ecef;
+    transform: rotate(90deg);
 }
 
 .search-box {
@@ -85,6 +108,75 @@ header p {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+}
+
+.api-key-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.api-key-header h3 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.current-key {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.current-key p {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+#currentKeyText {
+    font-family: 'Courier New', monospace;
+    color: #667eea;
+    font-size: 0.9rem;
+}
+
+.change-key-btn {
+    padding: 8px 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.change-key-btn:hover {
+    background: #5568d3;
 }
 
 .api-key-section p {
